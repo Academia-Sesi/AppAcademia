@@ -1,6 +1,10 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+import Image from "next/image";
+import Sesi from "../public/Sesi.png";
+import Link from "next/link";
+import Retangulo from "../public/Retangulo.svg";
+
+// NICOLE ESTA FAZENDO ESSA PÁGINA
 
 export default function Home() {
   return (
@@ -11,13 +15,53 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
-        <h1>
-          Home aqui
-        </h1>
+      <main className="wppHome">
+        <nav>
+          <Image
+            width="112"
+            height="35"
+            className="logo"
+            src={Sesi}
+            alt="Logo do Senai"
+          />
+          <lu>
+            <li>
+              <Link href="/" locale="home">
+                Início
+              </Link>
+            </li>
+
+            <li>
+              <Link
+                href="https://sesisc.org.br/sobre-sesi"
+                locale="home"
+                target="_blank"
+              >
+                Conheça mais
+              </Link>
+            </li>
+
+            <li>
+              <Link
+                href="https://transparencia.sesisc.org.br/fale-conosco?entidade=sesi"
+                locale="home"
+                target="_blank"
+              >
+                Entre em contato
+              </Link>
+            </li>
+          </lu>
+        </nav>
+        <Image
+            width="509"
+            height="915"
+            className="retangulo"
+            src={Retangulo}
+            alt="Logo do Senai"
+          />
       </main>
 
-      <footer className={styles.footer}>
+      {/* <footer className={styles.footer}>
         <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
           target="_blank"
@@ -28,7 +72,7 @@ export default function Home() {
             <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
           </span>
         </a>
-      </footer>
+      </footer> */}
     </div>
-  )
+  );
 }

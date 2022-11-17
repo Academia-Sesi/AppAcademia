@@ -1,3 +1,5 @@
+/* Predefinido do NEXT.js */
+
 html,
 body {
   padding: 0;
@@ -15,12 +17,41 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+/* Nosso CSS */
+
+body {
+  background-color: white;
 }
+
+.logo {
+  margin: 35px 0px 0px 45px;
+}
+
+li {
+  list-style-type: none;
+  margin-top: 40px;
+  margin-left: 28px;
+}
+
+lu {
+  display: flex;
+  margin-left: 117px;
+}
+
+nav {
+  display: flex;
+}
+
+.retangulo {
+  margin-left: 100px;
+  position: absolute;
+}
+
+/* .wppHome {
+  background-image: url("/Wpp.png");
+  background-position: top center;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+
+} */
