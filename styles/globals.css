@@ -16,6 +16,7 @@ a {
 
 * {
   box-sizing: border-box;
+  margin: 0px;
 }
 
 /* Nosso CSS */
@@ -53,39 +54,57 @@ img.retangulo {
 img.masculo {
   position: absolute;
   left:50%;
-  margin-top: 180px;
+  margin-top: 130px;
 }
 
-h1.construa{
+span.construa{
   font-size: 65px;
-  margin: 0px;
   font-weight: 400;
 }
 
-h2.perfeita {
+span.perfeita {
   font-size: 65px;
   margin: 0px;
   font-weight: 700;
   font-style: italic;
-  background: -webkit-linear-gradient(#0670B7, #FFFFFF00);
+  background: linear-gradient(to top right, #FFFFFF 0%, #0670B7 51%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  padding-left: 2%;
 }
-
 
 div.frase {
   display: flex;
-  padding-top: 340px;
-  padding-left: 69px;
+  padding-top: 260px;
   margin-right: 700px;
   text-align: start;
 }
 
-/* .wppHome {
-  background-image: url("/Wpp.png");
-  background-position: top center;
+.pl{
+  padding-left: 69px;
+}
 
-  background-repeat: no-repeat;
-  background-size: cover;
+p.venha {
+  font-weight: 400;
+  color: #9A9A9A;
+  font-size: 20px;
+  display: flex;
+  margin-right: 900px;
+}
 
-} */
+.botoes {
+  border-radius: 90px;
+  padding: 10px 20px 10px 20px;
+}
+
+.b1 {
+ background-color: #3088C3;
+ color: #FFFFFF;
+}
+
+.b2 {
+  border: solid;
+  border-width: 2px;
+  border-color: #094B79;
+  color: #094B79;
+}

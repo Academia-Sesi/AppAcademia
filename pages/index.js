@@ -55,12 +55,21 @@ export default function Home() {
         </nav>
         <Image className="retangulo" src={Retangulo} alt="Parede retangular" />
         <Image className="masculo" src={Masculo} alt="Homem masculo aqui" />
-        <div className="frase">
-          <h1 className="construa">
+        <div className="pl frase">
+          <span className="construa">
             CONSTRUA A SAÚDE
-            <h2 className="perfeita">PERFEITA</h2>
-          </h1>
+            <span className="perfeita">PERFEITA</span>
+          </span>
         </div>
+        <p className="pl venha">
+          Venha conheçar uma das melhores academia da região de São José
+        </p>
+        <Link href="/cadastro" locale="home" className="botoes b1">
+          CRIE UMA CONTA
+        </Link>
+        <Link href="/cadastro" locale="home" className="botoes b2">
+          FAÇA LOGIN
+        </Link>
       </main>
 
       {/* <footer className={styles.footer}>
