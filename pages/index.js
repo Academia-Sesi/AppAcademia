@@ -3,6 +3,7 @@ import Image from "next/image";
 import Sesi from "../public/Sesi.png";
 import Link from "next/link";
 import Retangulo from "../public/Retangulo.svg";
+import Masculo from "../public/masculo.png";
 
 // NICOLE ESTA FAZENDO ESSA PÁGINA
 
@@ -15,7 +16,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="wppHome">
+      <main>
         <nav>
           <Image
             width="112"
@@ -27,7 +28,7 @@ export default function Home() {
           <lu>
             <li>
               <Link href="/" locale="home">
-                Início
+                INICIO
               </Link>
             </li>
 
@@ -37,7 +38,7 @@ export default function Home() {
                 locale="home"
                 target="_blank"
               >
-                Conheça mais
+                CONHEÇA MAIS
               </Link>
             </li>
 
@@ -47,18 +48,19 @@ export default function Home() {
                 locale="home"
                 target="_blank"
               >
-                Entre em contato
+                ENTRE EM CONTATO
               </Link>
             </li>
           </lu>
         </nav>
-        <Image
-            width="509"
-            height="915"
-            className="retangulo"
-            src={Retangulo}
-            alt="Logo do Senai"
-          />
+        <Image className="retangulo" src={Retangulo} alt="Parede retangular" />
+        <Image className="masculo" src={Masculo} alt="Homem masculo aqui" />
+        <div className="frase">
+          <h1 className="construa">
+            CONSTRUA A SAÚDE
+            <h2 className="perfeita">PERFEITA</h2>
+          </h1>
+        </div>
       </main>
 
       {/* <footer className={styles.footer}>
