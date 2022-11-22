@@ -86,14 +86,19 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <div className=" pl-16 pt-96 mt-44 text-3xl text-center">
-            <span className="font-normal">
-              Conheça nossas
-              <span className="colorfullWord pl-2 font-bold align">
-                Modalidades
-              </span>
+        <div className=" pl-16 pt-64 mt-20 pb-48 text-3xl text-center">
+          <span className="font-normal">
+            Conheça nossas
+            <span className="colorfullWord pl-2 font-bold align">
+              Modalidades
             </span>
-          </div>
+          </span>
+        </div>
+
+        <div className="squares mb-5">
+          <div className=" bg-white w-56 h-[400px] rounded-3xl drop-shadow-2xl ml-5"></div>
+        </div>
+
       </main>
 
       {/* <footer className=" bg-slate-600">
