@@ -29,11 +29,10 @@ body {
   background-color: white;
 }
 
-span.perfeita {
+.colorfullWord {
   background: linear-gradient(to top right, #FFFFFF 0%, #0670B7 51%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  padding-left: 2%;
 }
 
 .wpp {

@@ -57,46 +57,53 @@ export default function Home() {
           src={Masculo}
           alt="Homem masculo aqui"
         />
-        <div className=" pl-16 flex pt-64 mr-[700px]">
-          <span className=" text-6xl font-normal">
-            CONSTRUA A SAÚDE
-            <span className="perfeita text-6xl font-bold italic align">
-              PERFEITA
+        <div className="center box pt-20">
+          <div className=" pl-16 flex pt-64 mr-[700px]">
+            <span className=" text-6xl font-normal">
+              CONSTRUA A SAÚDE
+              <span className="pl-[2%] colorfullWord text-6xl font-bold italic align">
+                PERFEITA
+              </span>
             </span>
-          </span>
+          </div>
+          <p className="venha pl-16 pr-10 text-start font-normal text-stone-400 text-xl flex md:mr-[900px]">
+            Venha conheçar uma das melhores academia da região de São José
+          </p>
+          <div className="display-flex mt-12">
+            <Link
+              href="/cadastro"
+              locale="home"
+              className="b1 bg-sky-600 text-white ml-16 py-3 px-5 rounded-3xl"
+            >
+              CRIE UMA CONTA
+            </Link>
+            <Link
+              href="/login"
+              locale="home"
+              className=" ml-5 border-solid border-2 border-sky-600 text-sky-600 py-3 px-9 rounded-3xl"
+            >
+              FAÇA LOGIN
+            </Link>
+          </div>
         </div>
-        <p className="venha pl-16 pr-10 text-start font-normal text-stone-400 text-xl flex md:mr-[900px]">
-          Venha conheçar uma das melhores academia da região de São José
-        </p>
-        <div className="display-flex mt-12">
-          <Link
-            href="/cadastro"
-            locale="home"
-            className="b1 bg-sky-600 text-white ml-16 py-3 px-5 rounded-3xl"
-          >
-            CRIE UMA CONTA
-          </Link>
-          <Link
-            href="/login"
-            locale="home"
-            className=" ml-5 border-solid border-2 border-sky-600 text-sky-600 py-3 px-9 rounded-3xl"
-          >
-            FAÇA LOGIN
-          </Link>
-        </div>
-        <p className="flex justify-center relative pt-96 mt-96">
-          Conheça nossas Modalidades
-        </p>
+        <div className=" pl-16 pt-96 mt-44 text-3xl text-center">
+            <span className="font-normal">
+              Conheça nossas
+              <span className="colorfullWord pl-2 font-bold align">
+                Modalidades
+              </span>
+            </span>
+          </div>
       </main>
 
-      {/* <footer className={styles.footer}>
+      {/* <footer className=" bg-slate-600">
         <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
           target="_blank"
           rel="noopener noreferrer"
         >
           Powered by{' '}
-          <span className={styles.logo}>
+          <span className="">
             <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
           </span>
         </a>
