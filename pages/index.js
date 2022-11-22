@@ -1,12 +1,33 @@
+import { useState, useEffect } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import Sesi from "../public/Sesi.png";
 import Link from "next/link";
 import Masculo from "../public/masculo.png";
+import Musculação from "../public/Musculação.png";
+import Funcional from "../public/Funcional.png";
+import HIIT from "../public/Hiit.png";
+import Hidroginastica from "../public/Hidroginastica.png";
+import Pilates from "../public/Pilates.png";
+import Yoga from "../public/Yoga.png";
 
 // NICOLE ESTA FAZENDO ESSA PÁGINA
 
 export default function Home() {
+  const [navbar, setNavbar] = useState (false);
+
+  const changeBg = () => {
+    if(window.scrollY >= 80){
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  }
+
+  if ( typeof window !== "undefined") {
+    window.addEventListener('scroll', changeBg)
+  }
+
   return (
     <div>
       <Head>
@@ -16,22 +37,22 @@ export default function Home() {
       </Head>
 
       <main className="wpp">
-        <nav className="flex bg-transparent fixed">
+        <nav className={navbar ? 'flex bg-white fixed z-10 w-full' : ' w-full flex bg-transparent fixed'}>
           <Image
             width="112"
             height="35"
-            className=" mt-9 ml-11"
+            className=" mt-5 mb-5 ml-11"
             src={Sesi}
             alt="Logo do Senai"
           />
           <lu className="list-none text-lg flex ml-28">
-            <li className="mt-10 ml-7 ">
+            <li className="mt-6 ml-7 ">
               <Link href="/" locale="home">
                 INICIO
               </Link>
             </li>
 
-            <li className="mt-10 ml-7 ">
+            <li className="mt-6 ml-7 ">
               <Link
                 href="https://sesisc.org.br/sobre-sesi"
                 locale="home"
@@ -41,7 +62,7 @@ export default function Home() {
               </Link>
             </li>
 
-            <li className="mt-10 ml-7 ">
+            <li className="mt-6 ml-7 ">
               <Link
                 href="https://transparencia.sesisc.org.br/fale-conosco?entidade=sesi"
                 locale="home"
@@ -86,7 +107,7 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <div className=" pl-16 pt-64 mt-20 pb-48 text-3xl text-center">
+        <div className=" pl-16 pt-64 mt-20 pb-2 text-3xl text-center">
           <span className="font-normal">
             Conheça nossas
             <span className="colorfullWord pl-2 font-bold align">
@@ -95,10 +116,50 @@ export default function Home() {
           </span>
         </div>
 
-        <div className="squares mb-5">
-          <div className=" bg-white w-56 h-[400px] rounded-3xl drop-shadow-2xl ml-5"></div>
+        <div className="ml-10 py-20 gap-14 gap-y-12 list-none flex justify-center flex-wrap">
+          <div className=" bg-white w-[343px] h-[440px] rounded-3xl drop-shadow-2xl">
+            <Image
+              className="rounded-t-3xl"
+              src={Musculação}
+              alt="Homem masculo aqui"
+            />
+          </div>
+          <div className=" bg-white w-[343px] h-[440px] rounded-3xl drop-shadow-2xl">
+            <Image
+              className="rounded-t-3xl"
+              src={Pilates}
+              alt="Homem masculo aqui"
+            />
+          </div>
+          <div className=" bg-white w-[343px] h-[440px] rounded-3xl drop-shadow-2xl">
+            <Image
+              className="rounded-t-3xl"
+              src={Yoga}
+              alt="Homem masculo aqui"
+            />
+          </div>
+          <div className=" bg-white w-[343px] h-[440px] rounded-3xl drop-shadow-2xl">
+            <Image
+              className="rounded-t-3xl"
+              src={Funcional}
+              alt="Homem masculo aqui"
+            />
+          </div>
+          <div className=" bg-white w-[343px] h-[440px] rounded-3xl drop-shadow-2xl">
+            <Image
+              className="rounded-t-3xl"
+              src={HIIT}
+              alt="Homem masculo aqui"
+            />
+          </div>
+          <div className=" bg-white w-[343px] h-[440px] rounded-3xl drop-shadow-2xl">
+            <Image
+              className="rounded-t-3xl"
+              src={Hidroginastica}
+              alt="Homem masculo aqui"
+            />
+          </div>
         </div>
-
       </main>
 
       {/* <footer className=" bg-slate-600">
