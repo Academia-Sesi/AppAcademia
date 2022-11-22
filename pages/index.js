@@ -52,14 +52,8 @@ export default function Home() {
             </li>
           </lu>
         </nav>
-        {/* <Image
-          className=" float-right"
-          width="860"
-          src={Retangulo}
-          alt="Parede retangular"
-        /> */}
         <Image
-          className=" absolute left-1/2 mt-32 md:flex hidden max-w-full h-auto"
+          className="masculo absolute left-1/2 mt-32 md:flex hidden max-w-full h-auto"
           src={Masculo}
           alt="Homem masculo aqui"
         />
@@ -71,7 +65,7 @@ export default function Home() {
             </span>
           </span>
         </div>
-        <p className="pl-16 font-normal text-stone-400 text-xl flex mr-[900px]">
+        <p className="venha pl-16 pr-10 text-start font-normal text-stone-400 text-xl flex md:mr-[900px]">
           Venha conheçar uma das melhores academia da região de São José
         </p>
         <div className="display-flex mt-12">

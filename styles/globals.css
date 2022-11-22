@@ -43,3 +43,16 @@ span.perfeita {
   width: 100%;
   height: 100vh;
 }
+
+@media screen and (max-width: 1300px)
+{
+  .masculo
+   {
+    display: none !important;
+   }
+
+   .venha {
+    margin-right: 0px !important;
+   }
+
+}
