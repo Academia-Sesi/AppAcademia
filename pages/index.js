@@ -3,7 +3,6 @@ import Head from "next/head";
 import Image from "next/image";
 import Sesi from "../public/Sesi.png";
 import Link from "next/link";
-import Masculo from "../public/masculo.png";
 import Musculação from "../public/Musculação.png";
 import Funcional from "../public/Funcional.png";
 import HIIT from "../public/Hiit.png";
@@ -14,18 +13,18 @@ import Yoga from "../public/Yoga.png";
 // NICOLE ESTA FAZENDO ESSA PÁGINA
 
 export default function Home() {
-  const [navbar, setNavbar] = useState (false);
+  const [navbar, setNavbar] = useState(false);
 
   const changeBg = () => {
-    if(window.scrollY >= 80){
+    if (window.scrollY >= 100) {
       setNavbar(true);
     } else {
       setNavbar(false);
     }
-  }
+  };
 
-  if ( typeof window !== "undefined") {
-    window.addEventListener('scroll', changeBg)
+  if (typeof window !== "undefined") {
+    window.addEventListener("scroll", changeBg);
   }
 
   return (
@@ -36,8 +35,14 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="wpp">
-        <nav className={navbar ? 'flex bg-white fixed z-10 w-full' : ' w-full flex bg-transparent fixed'}>
+      <main className="wpp w-screen">
+        <nav
+          className={
+            navbar
+              ? "flex bg-white fixed z-10 w-full acendeapaga"
+              : "acendeapaga w-full flex bg-transparent fixed"
+          }
+        >
           <Image
             width="112"
             height="35"
@@ -73,41 +78,37 @@ export default function Home() {
             </li>
           </lu>
         </nav>
-        <Image
-          className="masculo absolute left-1/2 mt-32 md:flex hidden max-w-full h-auto"
-          src={Masculo}
-          alt="Homem masculo aqui"
-        />
-        <div className="center box pt-20">
-          <div className=" pl-16 flex pt-64 mr-[700px]">
-            <span className=" text-6xl font-normal">
+
+        <div className="center box md:pt-20 pt-0 md:ml-16 ml-6">
+          <div className="flex md:pt-64 pt-32 mr-[700px]">
+            <span className=" md:text-6xl text-5xl font-normal">
               CONSTRUA A SAÚDE
-              <span className="pl-[2%] colorfullWord text-6xl font-bold italic align">
+              <span className="pl-[2%] colorfullWord md:text-6xl text-5xl font-bold italic align">
                 PERFEITA
               </span>
             </span>
           </div>
-          <p className="venha pl-16 pr-10 text-start font-normal text-stone-400 text-xl flex md:mr-[900px]">
+          <p className="venha pr-10 text-start font-normal text-stone-400 md:text-xl text-base flex md:mr-[900px]">
             Venha conheçar uma das melhores academia da região de São José
           </p>
-          <div className="display-flex mt-12">
+          <div className="flex mt-12 ">
             <Link
               href="/cadastro"
               locale="home"
-              className="b1 bg-sky-600 text-white ml-16 py-3 px-5 rounded-3xl"
+              className="b1 bg-sky-600 text-white md:text-base text-sm py-4 px-5 rounded-3xl"
             >
               CRIE UMA CONTA
             </Link>
             <Link
               href="/login"
               locale="home"
-              className=" ml-5 border-solid border-2 border-sky-600 text-sky-600 py-3 px-9 rounded-3xl"
+              className=" ml-5 border-solid border-2 border-sky-600 md:text-base text-sm text-sky-600 py-3 px-9 rounded-3xl"
             >
               FAÇA LOGIN
             </Link>
           </div>
         </div>
-        <div className=" pl-16 pt-64 mt-20 pb-2 text-3xl text-center">
+        <div className="conheca pl-16 pt-64 mt-20 pb-2 text-3xl text-center">
           <span className="font-normal">
             Conheça nossas
             <span className="colorfullWord pl-2 font-bold align">
@@ -123,6 +124,12 @@ export default function Home() {
               src={Musculação}
               alt="Homem masculo aqui"
             />
+            <p>
+              Treinos personalizados de acordo com os objetivos de cada
+              praticante. Utilizando o recurso de aparelhos com carga, permite
+              que o aluno exercite tanto grandes grupos musculares quanto de
+              forma isolada, criando uma grande variabilidade de exercícios.
+            </p>
           </div>
           <div className=" bg-white w-[343px] h-[440px] rounded-3xl drop-shadow-2xl">
             <Image
@@ -130,6 +137,12 @@ export default function Home() {
               src={Pilates}
               alt="Homem masculo aqui"
             />
+            <p>
+              Para quem gosta de aulas mais tranquilas, mas não menos exigentes,
+              o Pilates Solo alia exercícios posturais e respiratórios com
+              atividades de força muscular. Ideal para trabalhar a consciência
+              corporal, a respiração e o fortalecimento da musculatura postural.
+            </p>
           </div>
           <div className=" bg-white w-[343px] h-[440px] rounded-3xl drop-shadow-2xl">
             <Image
@@ -137,6 +150,11 @@ export default function Home() {
               src={Yoga}
               alt="Homem masculo aqui"
             />
+            <p>
+              Para aquele momento em que a atividade física alia alongamento,
+              meditação e fortalecimento, o Yoga traz em sua técnica milenar
+              posições e movimentos voltados ao corpo e à mente.
+            </p>
           </div>
           <div className=" bg-white w-[343px] h-[440px] rounded-3xl drop-shadow-2xl">
             <Image
@@ -144,6 +162,11 @@ export default function Home() {
               src={Funcional}
               alt="Homem masculo aqui"
             />
+            <p>
+              Atividades que usam o peso do corpo e alguns implementos de peso
+              livre (kettlebell, anilhas, barras, faixas elásticas) tornam as
+              aulas dinâmicas e divertidas.
+            </p>
           </div>
           <div className=" bg-white w-[343px] h-[440px] rounded-3xl drop-shadow-2xl">
             <Image
@@ -151,6 +174,11 @@ export default function Home() {
               src={HIIT}
               alt="Homem masculo aqui"
             />
+            <p>
+              Atividades que usam o peso do corpo e alguns implementos de peso
+              livre (kettlebell, anilhas, barras, faixas elásticas) tornam as
+              aulas dinâmicas e divertidas.
+            </p>
           </div>
           <div className=" bg-white w-[343px] h-[440px] rounded-3xl drop-shadow-2xl">
             <Image
@@ -158,6 +186,10 @@ export default function Home() {
               src={Hidroginastica}
               alt="Homem masculo aqui"
             />
+            <p>
+              Atividades aquáticas que atuam no condicionamento físico com baixo
+              impacto. Ideal para quem tem restrição de movimentos.
+            </p>
           </div>
         </div>
       </main>
