@@ -43,13 +43,15 @@ export default function Home() {
               : "acendeapaga w-full flex bg-transparent fixed"
           }
         >
-          <Image
-            width="112"
-            height="35"
-            className=" mt-5 mb-5 ml-11"
-            src={Sesi}
-            alt="Logo do Senai"
-          />
+          <Link href="/" locale="home">
+            <Image
+              width="112"
+              height="35"
+              className=" mt-5 mb-5 ml-11"
+              src={Sesi}
+              alt="Logo do Senai"
+            />
+          </Link>
           <lu className="list-none text-lg flex ml-28">
             <li className="mt-6 ml-7 ">
               <Link href="/" locale="home">
@@ -93,14 +95,14 @@ export default function Home() {
           </p>
           <div className="flex mt-12 ">
             <Link
-              href="/cadastro"
+              href="/Cadastro"
               locale="home"
               className="b1 bg-sky-600 text-white md:text-base text-sm py-4 px-5 rounded-3xl"
             >
               CRIE UMA CONTA
             </Link>
             <Link
-              href="/login"
+              href="/Login"
               locale="home"
               className=" ml-5 border-solid border-2 border-sky-600 md:text-base text-sm text-sky-600 py-3 px-9 rounded-3xl"
             >

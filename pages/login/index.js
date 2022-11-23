@@ -1,7 +1,9 @@
-import Head from 'next/head'
-import Image from 'next/image'
+import Head from "next/head";
+import Image from "next/image";
+import Link from "next/link";
+import Sesi from "../../public/Sesi.png";
 
-export default function Login() {
+export default function Cadastro() {
   return (
     <div>
       <Head>
@@ -11,11 +13,23 @@ export default function Login() {
       </Head>
 
       <main>
-        <h1>
-          Login aqui
-        </h1>
+        <Link href="/" locale="Login">
+          <Image
+            width="112"
+            height="35"
+            className=" mt-5 mb-5 ml-11"
+            src={Sesi}
+            alt="Logo do Senai"
+          />
+        </Link>
+        <Link
+          href="/UsuarioHome"
+          locale="Login"
+          className=" ml-5 border-solid border-2 border-sky-600 md:text-base text-sm text-sky-600 py-3 px-9 rounded-3xl"
+        >
+          Entrar
+        </Link>
       </main>
-
     </div>
-  )
+  );
 }
