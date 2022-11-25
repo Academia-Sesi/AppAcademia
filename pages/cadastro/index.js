@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import Sesi from "../../public/Sesi.png";
+import Fundo from "../../public/fundo-desenho.png"
 
 export default function Cadastro() {
   return (
@@ -12,7 +13,7 @@ export default function Cadastro() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
+      <main className="MainCadastro">
         <Link href="/" locale="Cadastro">
           <Image
             width="112"
@@ -27,8 +28,20 @@ export default function Cadastro() {
           locale="Cadastro"
           className=" ml-5 border-solid border-2 border-sky-600 md:text-base text-sm text-sky-600 py-3 px-9 rounded-3xl"
         >
-          Cadastrar
         </Link>
+        <h1>Bem-vindo</h1>
+        <h3>Olá digite as suas informações</h3>
+        <div className="inputs"> 
+          <input type="text" placeholder="Nome Completo Aqui"></input>
+          <input type="text" placeholder="000.000.000-00"></input>
+          <input type="text" placeholder="Password"></input>
+        </div>
+        <Image
+          //tirar istock da imagem com le ps
+          src={Fundo}
+          alt="Fundo Desenho"
+          className="fundo-desenho"
+        />
       </main>
     </div>
   );
