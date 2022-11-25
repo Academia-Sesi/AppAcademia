@@ -82,7 +82,7 @@ export default function Home() {
         </nav>
 
         <div className="center box md:pt-20 pt-0 md:ml-16 ml-6">
-          <div className="flex md:pt-64 pt-32 mr-[700px]">
+          <div className="flex md:pt-56 pt-32 mr-[700px]">
             <span className=" md:text-6xl text-5xl font-normal">
               CONSTRUA A SAÚDE
               <span className="pl-[2%] colorfullWord md:text-6xl text-5xl font-bold italic align">
@@ -121,11 +121,16 @@ export default function Home() {
 
         <div className="ml-10 py-20 gap-14 gap-y-12 list-none flex justify-center flex-wrap">
           <div className=" bg-white w-[343px] h-[440px] rounded-3xl drop-shadow-2xl">
-            <Image
-              className="rounded-t-3xl"
-              src={Musculação}
-              alt="Homem masculo aqui"
-            />
+            <div className="relative inline-block">
+              <Image
+                className="rounded-t-3xl"
+                src={Musculação}
+                alt="Homem masculo aqui"
+              />
+              <h1 className="absolute bottom-10 left-4 text-white font-normal">
+                Musculação e condicionamento físico
+              </h1>
+            </div>
             <p>
               Treinos personalizados de acordo com os objetivos de cada
               praticante. Utilizando o recurso de aparelhos com carga, permite
