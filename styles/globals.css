@@ -36,7 +36,6 @@ a {
 .acendeapaga {
   transition: 0.2s;
 }
-
 @media screen and (max-width: 1300px) {
   .venha {
     margin-right: 0px !important;
@@ -77,28 +76,63 @@ a {
 }
 
 /*=====Cadastro=====*/
-.MainCadastro{
+.bodyequivalent{
   overflow: hidden;
-
+}
+.elementosesquerda{
+  align-items: center;
+  padding-left: 3%;
+}
+#bemvindo{
+  margin-top: 4%;
+  margin-left: 11%;
+}
+.bemvindo{
+  font-weight: bold;
+  font-size: 200%;
 }
 .fundo-desenho{
-  position: relative;
+  position: absolute;
   width: 48%;
-  left: 51%;
-  bottom: 10%;
+  right: 0; 
+  top: 0;
 }
-.input{
-  width: 100px;
-  padding-left: 10%;
+.inputs{
+  display: flex; 
+  flex-direction: column; 
+  width: 90%;
+  padding-top: 2%;
+  padding-left: 4%;
+}
+.inputs h1{
+  margin-top: 1%;
+  padding-left: 8%;
 }
 .inputs input{
+  margin-top: 0.1%;
   width: 30%;
+  height: 10%;
   left: 8%;
   border: 2px solid #dbdfe4;
-  border-radius: 5px;
+  border-radius: 2%;
   position: relative;
   padding: 10px;
   font-size: 14px;
   margin-bottom: 10px;
+}
+#login{
+  padding-left: 13%;
+  display: flex;
+}
+.loginlink{
+  padding-left: 0.5%;
+  font-weight: bold;
+  color: #006CB5;
+}
+#botao{
+  margin-left: 20%;
+}
+#botao h1{
+  margin-left: 20%;
 }
 /*=====Login=====*/
