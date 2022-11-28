@@ -11,6 +11,11 @@ import Pilates from "../public/Pilates.png";
 import RetanguloCom from "../public/retangulo.png";
 import RetanguloSem from "../public/wppSem.png";
 import Yoga from "../public/Yoga.png";
+import Facebook from "../public/facebook.png";
+import Twitter from "../public/Twitter.png";
+import Instagram from "../public/Instagram.png";
+import Linkedin from "../public/Linkedin.png";
+import Youtube from "../public/Youtube.png";
 
 // NICOLE ESTA FAZENDO ESSA PÁGINA
 
@@ -159,9 +164,7 @@ export default function Home() {
                 src={Pilates}
                 alt="Homem masculo aqui"
               />
-              <h1 className="absolute  text-white font-normal">
-                Musculação e condicionamento físico
-              </h1>
+              <h1 className="absolute  text-white font-normal">Pilates Solo</h1>
             </div>
             <p>
               Para quem gosta de aulas mais tranquilas, mas não menos exigentes,
@@ -178,9 +181,7 @@ export default function Home() {
                 src={Yoga}
                 alt="Homem masculo aqui"
               />
-              <h1 className="absolute text-white font-normal">
-                Musculação e condicionamento físico
-              </h1>
+              <h1 className="absolute text-white font-normal">Yoga</h1>
             </div>
             <p>
               Para aquele momento em que a atividade física alia alongamento,
@@ -193,7 +194,7 @@ export default function Home() {
             <div className="relative flex justify-center items-center">
               <Image
                 className="rounded-t-3xl"
-                src={Yoga}
+                src={Funcional}
                 alt="Homem masculo aqui"
               />
               <h1 className="absolute text-white font-normal">
@@ -239,17 +240,61 @@ export default function Home() {
         </div>
       </main>
 
-      <footer className=" bg-slate-600 mt-auto">
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{" "}
-          <span className="">
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
+      <footer className="py-10 justify-center items-center bg-[#006CB5] mt-auto">
+        <div className="flex">
+          <Image src={Sesi} width="90" height="10" className="ml-8" />
+          <div className="flex px-auto items-center space-x-4 ml-auto mr-10">
+            <Link href="/" locale="home">
+              <Image
+                width="40"
+                height="40"
+                className=""
+                src={Facebook}
+                alt="Logo do Faceook"
+              />
+            </Link>
+
+            <Link href="/" locale="home">
+              <Image
+                width="40"
+                height="40"
+                className=""
+                src={Twitter}
+                alt="Logo do Twitter"
+              />
+            </Link>
+
+            <Link href="/" locale="home">
+              <Image
+                width="40"
+                height="40"
+                className=""
+                src={Instagram}
+                alt="Logo do Instagram"
+              />
+            </Link>
+
+            <Link href="/" locale="home">
+              <Image
+                width="40"
+                height="40"
+                className=""
+                src={Linkedin}
+                alt="Logo do Linkedin"
+              />
+            </Link>
+
+            <Link href="/" locale="home">
+              <Image
+                width="40"
+                height="40"
+                className=""
+                src={Youtube}
+                alt="Logo do Youtube}"
+              />
+            </Link>
+          </div>
+        </div>
       </footer>
     </div>
   );
