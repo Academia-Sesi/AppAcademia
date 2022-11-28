@@ -128,7 +128,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="conheca pl-16 pt-64 mt-20 pb-2 text-3xl text-center">
+        <div className="conheca pl-16 pt-56 mt-20 pb-2 text-3xl text-center">
           <span className="font-normal">
             Conheça nossas
             <span className="colorfullWord pl-2 font-bold align">
@@ -137,7 +137,7 @@ export default function Home() {
           </span>
         </div>
 
-        <div className="ml-10 py-20 gap-14 gap-y-12 list-none flex justify-center flex-wrap">
+        <div className=" py-20 gap-14 gap-y-12 list-none flex justify-center flex-wrap">
           <div className=" bg-white w-[343px] h-[440px] rounded-3xl drop-shadow-2xl">
             <div className="relative flex justify-center items-center">
               <Image
@@ -149,7 +149,7 @@ export default function Home() {
                 Musculação e condicionamento físico
               </h1>
             </div>
-            <p>
+            <p className="text-center px-4 my-3">
               Treinos personalizados de acordo com os objetivos de cada
               praticante. Utilizando o recurso de aparelhos com carga, permite
               que o aluno exercite tanto grandes grupos musculares quanto de
@@ -166,7 +166,7 @@ export default function Home() {
               />
               <h1 className="absolute  text-white font-normal">Pilates Solo</h1>
             </div>
-            <p>
+            <p className="text-center px-4 my-3">
               Para quem gosta de aulas mais tranquilas, mas não menos exigentes,
               o Pilates Solo alia exercícios posturais e respiratórios com
               atividades de força muscular. Ideal para trabalhar a consciência
@@ -183,7 +183,7 @@ export default function Home() {
               />
               <h1 className="absolute text-white font-normal">Yoga</h1>
             </div>
-            <p>
+            <p className="text-center px-4 my-3">
               Para aquele momento em que a atividade física alia alongamento,
               meditação e fortalecimento, o Yoga traz em sua técnica milenar
               posições e movimentos voltados ao corpo e à mente.
@@ -201,7 +201,7 @@ export default function Home() {
                 Treinamento funcional
               </h1>
             </div>
-            <p>
+            <p className="text-center px-4 my-3">
               Atividades que usam o peso do corpo e alguns implementos de peso
               livre (kettlebell, anilhas, barras, faixas elásticas) tornam as
               aulas dinâmicas e divertidas.
@@ -213,7 +213,7 @@ export default function Home() {
               <Image className="rounded-t-3xl" src={HIT} alt="Imagem de hit" />
               <h1 className="absolute text-white font-normal">HIT</h1>
             </div>
-            <p>
+            <p className="text-center px-4 my-3">
               Treino intervalado de alta intensidade em que os exercícios são
               repetidos até a exaustão, seguidos de breve momento de descanso,
               utilizando os equipamentos da academia ou até mesmo pesos livres
@@ -232,7 +232,7 @@ export default function Home() {
                 Hidroginástica e natação
               </h1>
             </div>
-            <p>
+            <p className="text-center px-4 my-3">
               Atividades aquáticas que atuam no condicionamento físico com baixo
               impacto. Ideal para quem tem restrição de movimentos.
             </p>
@@ -244,7 +244,7 @@ export default function Home() {
         <div className="flex">
           <Image src={Sesi} width="90" height="10" className="ml-8" />
           <div className="flex px-auto items-center space-x-4 ml-auto mr-10">
-            <Link href="/" locale="home">
+            <Link href="https://www.facebook.com/groups/285193339606782/" target="blank" locale="home">
               <Image
                 width="40"
                 height="40"
@@ -254,7 +254,7 @@ export default function Home() {
               />
             </Link>
 
-            <Link href="/" locale="home">
+            <Link href="https://twitter.com/SESIsc" target="blank" locale="home">
               <Image
                 width="40"
                 height="40"
@@ -264,7 +264,7 @@ export default function Home() {
               />
             </Link>
 
-            <Link href="/" locale="home">
+            <Link href="https://www.instagram.com/sesi.sc/" target="blank" locale="home">
               <Image
                 width="40"
                 height="40"
@@ -274,7 +274,7 @@ export default function Home() {
               />
             </Link>
 
-            <Link href="/" locale="home">
+            <Link href="https://www.linkedin.com/company/sesisc/" target="blank" locale="home">
               <Image
                 width="40"
                 height="40"
@@ -284,7 +284,7 @@ export default function Home() {
               />
             </Link>
 
-            <Link href="/" locale="home">
+            <Link href="https://www.youtube.com/@sesi" target="blank" locale="home">
               <Image
                 width="40"
                 height="40"
