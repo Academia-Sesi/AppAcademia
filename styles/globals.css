@@ -8,14 +8,12 @@
 
 html,
 body {
-  width: 100vw;
   height: 100vh;
   padding: 0;
   margin: 0;
   font-family: "Poppins", cursive;
   background-color: white;
 }
-
 a {
   color: inherit;
   text-decoration: none;
@@ -34,29 +32,15 @@ a {
   -webkit-text-fill-color: transparent;
 }
 
-.wpp {
-  background-color: #ffffff;
-  background-image: url("../public/retangulo.png");
-  background-size: cover;
-  width: 100vw;
-  height: 100vh;
-}
-
-@media screen and (max-width: 1300px) {
-
-  .wpp {
-    background-color: #ffffff !important;
-    background-image: url("../public/WppSem.png");
-    background-size: cover;
-  }
-
-  .venha {
-    margin-right: 0px !important;
-  }
-}
 
 .acendeapaga {
   transition: 0.2s;
+}
+
+@media screen and (max-width: 1300px) {
+  .venha {
+    margin-right: 0px !important;
+  }
 }
 
 @media screen and (min-width: 1600px) {
@@ -65,6 +49,32 @@ a {
   }
 }
 
+.wppSem{
+  display: none;  
+}
+
+@media screen and (max-width: 1500px){
+  .wppCom{
+    display: none;
+  }
+
+  .wppSem{
+    display: block;
+    height: 100vh;
+    width: 50%;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 1000px){
+  .wppCom{
+    display: none;
+  }
+
+  .wppSem{
+    display: none;
+  }
+}
 
 /*=====Cadastro=====*/
 .MainCadastro{
