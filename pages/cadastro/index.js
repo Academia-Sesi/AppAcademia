@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Sesi from "../../public/Sesi.png";
 import Fundo from "../../public/fundo-desenho.png"
+import Senha from "../../public/senha.png"
 
 export default function Cadastro() {
   return (
@@ -34,7 +35,10 @@ export default function Cadastro() {
             <h1 className="cpftxt">CPF</h1>
             <input type="text" placeholder="000.000.000-00"></input>
             <h1 className="senhatxt">Senha</h1>
-            <input type="text" placeholder="Password"></input>
+            <div id="password">
+              <input type="text" placeholder="Password"></input>
+              <button><Image src={Senha}/></button>
+            </div>
           </div>
           <Link
             id="botao"
