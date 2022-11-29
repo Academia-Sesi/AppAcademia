@@ -2,7 +2,6 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import Sesi from "../../public/Sesi.png";
-import Fundo from "../../public/fundo-desenho.png"
 import Senha from "../../public/senha.png"
 
 export default function Cadastro() {
@@ -37,7 +36,7 @@ export default function Cadastro() {
             <h1 className="senhatxt">Senha</h1>
             <div id="password">
               <input type="text" placeholder="Password"></input>
-              <button><Image src={Senha}/></button>
+              <button><Image src={Senha} /></button>
             </div>
           </div>
           <Link
@@ -55,15 +54,6 @@ export default function Cadastro() {
               href="../Login/"
             ><h1>Faça Login</h1></Link>
           </div>
-        </div>
-
-        <div id="elementosdireita">   {/*div da direita, imagem de fundo*/}
-          <Image
-            //tirar istock da imagem com le ps
-            src={Fundo}
-            alt="Fundo Desenho"
-            className="fundo-desenho"
-          />
         </div>
       </main >
     </div >
