@@ -23,7 +23,7 @@ export default function Cadastro() {
             alt="Logo do Senai"
           />
         </Link>
-        <div className="elementosesquerda"> {/*div da esquerda, informações*/}
+        <div id="elementosesquerda"> {/*div da esquerda, informações*/}
           <div id="bemvindo">
             <h1 className="bemvindo">Bem-vindo!</h1>
             <h1>Olá, digite as suas informações</h1>
@@ -36,14 +36,14 @@ export default function Cadastro() {
             <h1 className="senhatxt">Senha</h1>
             <input type="text" placeholder="Password"></input>
           </div>
-            <Link
-              id="botao"
-              href="/UsuarioHome"
-              locale="Cadastro"
-              role="button"
-            >
-              <h1>Entrar</h1>
-            </Link>
+          <Link
+            id="botao"
+            href="/UsuarioHome"
+            locale="Cadastro"
+            className="b1 bg-sky-600 text-white md:text-base text-sm py-4 px-5"
+          >
+            Entrar
+          </Link>
           <div id="login">
             <h1>Já possui uma conta?</h1>
             <Link
@@ -53,7 +53,7 @@ export default function Cadastro() {
           </div>
         </div>
 
-        <div>   {/*div da direita, imagem de fundo*/}
+        <div id="elementosdireita">   {/*div da direita, imagem de fundo*/}
           <Image
             //tirar istock da imagem com le ps
             src={Fundo}
