@@ -26,7 +26,7 @@ export default function Cadastro() {
         <div id="elementosesquerda"> {/*div da esquerda, informações*/}
           <div id="bemvindo">
             <h1 className="bemvindo">Bem-vindo!</h1>
-            <h1>Olá, digite as suas informações</h1>
+            <h1>Olá, digite as suas informações.</h1>
           </div>
           <div className="inputs">
             <h1 className="nometxt">Nome</h1>
@@ -45,7 +45,7 @@ export default function Cadastro() {
             locale="Cadastro"
             className="b1 bg-sky-600 text-white md:text-base text-sm py-4 px-5"
           >
-            Entrar
+            Criar conta
           </Link>
           <div id="login">
             <h1>Já possui uma conta?</h1>

@@ -77,15 +77,16 @@ a {
   }
 }
 
-/*=====Cadastro=====*/
+/*=======Cadastro e Login=======*/
 
-.bodyequivalent{
+.bodyequivalent {
   overflow: hidden;
   background-size: 94%;
   background-image: url("../public/Cadastro.png");
   background-repeat: no-repeat;
   background-position: 100% 0;
 }
+
 .bodyequivalent div {
   display: inline-block;
 }
@@ -149,6 +150,12 @@ a {
   display: flex;
 }
 
+#loginlog {
+  margin-top: 1.5%;
+  padding-left: 13.5%;
+  display: flex;
+}
+
 .loginlink {
   padding-left: 0.5%;
   font-weight: bold;
@@ -169,31 +176,63 @@ a {
 }
 
 @media screen and (max-width: 1400px) {
-#elementosesquerda{
-  padding-left: 1%;
-  padding-top: 0;
-  padding-bottom: 3%;
-}
-  #botao{
+  #elementosesquerda {
+    padding-left: 1%;
+    padding-top: 0;
+    padding-bottom: 3%;
+  }
+
+  #botao {
     margin-left: 16%;
   }
+
   #login {
     padding-left: 12%;
   }
-  .inputs input{
+
+  .inputs input {
     width: 35%;
   }
 }
-@media screen and (max-width: 1600px) and (min-width: 1400px) {
+
+@media screen and (max-width: 1600px) and (min-width: 1000px) {
   #login {
     padding-left: 12%;
   }
 
-  @media screen and (max-width: 1900px) and (min-width: 1600px) {
-    #login {
-      padding-left: 13%;
-    }
+  #loginlog {
+    margin-top: 1.5%;
+    padding-left: 13.5%;
+    display: flex;
   }
 }
 
-/*=====Login=====*/
+@media screen and (max-width: 2000px) and (min-width: 1600px) {
+  .bodyequivalent{
+    padding-bottom: 3%;
+    background-position: 100% -20%;
+  }
+  #login {
+    padding-left: 13%;
+  }
+
+  #loginlog {
+    margin-top: 1.5%;
+    padding-left: 13.5%;
+    display: flex;
+  }
+}
+
+@media screen and (max-height: 1000px) and (max-width: 1600px) {
+  .bodyequivalent {
+    background-position: 30% 60%;
+    background-size: 120%;
+    padding-bottom: 25%;
+  }
+}
+
+@media screen and (max-height: 1100px) and (max-width: 2000px) {
+  #elementosesquerda {
+    padding-bottom: 11%;
+  }
+}
