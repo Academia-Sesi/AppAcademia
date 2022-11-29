@@ -78,6 +78,7 @@ a {
 }
 
 /*=======Cadastro e Login=======*/
+/*DISCLAIMER: as classes e IDs com log no final se referem ao Login*/
 
 .bodyequivalent {
   overflow: hidden;
@@ -85,6 +86,18 @@ a {
   background-image: url("../public/Cadastro.png");
   background-repeat: no-repeat;
   background-position: 100% 0;
+}
+
+.bodyequivalentlog {
+  overflow: hidden;
+  background-size: 94%;
+  background-image: url("../public/Cadastro.png");
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+}
+
+.bodyequivalentlog div {
+  display: inline-block;
 }
 
 .bodyequivalent div {
@@ -97,7 +110,12 @@ a {
   width: 100%;
   padding-left: 3%;
 }
-
+#elementosesquerdalog {
+  position: relative;
+  padding-top: 4.5%;
+  width: 100%;
+  padding-left: 3%;
+}
 #bemvindo {
   margin-top: 4%;
   margin-left: 10%;
@@ -152,7 +170,7 @@ a {
 
 #loginlog {
   margin-top: 1.5%;
-  padding-left: 13.5%;
+  padding-left: 13%;
   display: flex;
 }
 
@@ -168,10 +186,23 @@ a {
   border-radius: 6%;
   padding-left: 5%;
   padding-right: 5%;
-  margin-left: 15%;
+  margin-left: 13%;
+}
+
+#botaolog {
+  font-size: 120%;
+  padding: 0.5%;
+  border-radius: 6%;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-left: 14.5%;
 }
 
 #botao h1 {
+  margin-left: 20%;
+}
+
+#botaolog h1 {
   margin-left: 20%;
 }
 
@@ -181,11 +212,19 @@ a {
     padding-top: 0;
     padding-bottom: 3%;
   }
-
-  #botao {
-    margin-left: 16%;
+  #elementosesquerdalog {
+    position: relative;
+    padding-top: 4.5%;
+    width: 100%;
+    padding-left: 3%;
   }
 
+  #botao {
+    margin-left: 13.5%;
+  }
+  #botaolog {
+    margin-left: 16%;
+  }
   #login {
     padding-left: 12%;
   }
@@ -202,30 +241,41 @@ a {
 
   #loginlog {
     margin-top: 1.5%;
-    padding-left: 13.5%;
+    padding-left: 11%;
     display: flex;
   }
 }
 
 @media screen and (max-width: 2000px) and (min-width: 1600px) {
-  .bodyequivalent{
+  .bodyequivalent {
     padding-bottom: 3%;
     background-position: 100% -20%;
   }
+  .bodyequivalentlog {
+    padding-bottom: 3%;
+    background-position: 100% -20%;
+  }
+
   #login {
-    padding-left: 13%;
+    padding-left: 13.5%;
   }
 
   #loginlog {
     margin-top: 1.5%;
-    padding-left: 13.5%;
+    padding-left: 13%;
     display: flex;
   }
 }
 
 @media screen and (max-height: 1000px) and (max-width: 1600px) {
   .bodyequivalent {
-    background-position: 30% 60%;
+    background-position: 30% 40%;
+    background-size: 120%;
+    padding-bottom: 18%;
+  }
+
+  .bodyequivalentlog {
+    background-position: 30% 50%;
     background-size: 120%;
     padding-bottom: 25%;
   }
@@ -233,6 +283,9 @@ a {
 
 @media screen and (max-height: 1100px) and (max-width: 2000px) {
   #elementosesquerda {
+    padding-bottom: 6%;
+  }
+  #elementosesquerdalog {
     padding-bottom: 11%;
   }
 }
