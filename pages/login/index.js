@@ -2,9 +2,23 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import Sesi from "../../public/Sesi.png";
-import Senha from "../../public/senha.png"
 
-export default function Cadastro() {
+import { useState } from "react";
+import auth from "../../services/auth.js";
+
+export default function Login() {
+  const [cpf, setCpf] = useState("");
+  const [senha, setSenha] = useState("");
+
+  const cpfMask = (value) => {
+    return value
+      .replace(/\D/g, "") // substitui qualquer caracter que nao seja numero por nada
+      .replace(/(\d{3})(\d)/, "$1.$2") // captura 2 grupos de numero o primeiro de 3 e o segundo de 1, apos capturar o primeiro grupo ele adiciona um ponto antes do segundo grupo de numero
+      .replace(/(\d{3})(\d)/, "$1.$2")
+      .replace(/(\d{3})(\d{1,2})/, "$1-$2")
+      .replace(/(-\d{2})\d+?$/, "$1"); // captura 2 numeros seguidos de um traço e não deixa ser digitado mais nada
+  };
+
   return (
     <div className="bodyequivalentlog">
       <Head>
@@ -23,37 +37,47 @@ export default function Cadastro() {
             alt="Logo do Senai"
           />
         </Link>
-        <div id="elementosesquerdalog"> {/*div da esquerda, informações*/}
+        <div id="elementosesquerdalog">
+          {" "}
+          {/*div da esquerda, informações*/}
           <div id="bemvindo">
             <h1 className="bemvindo">Bem-vindo novamente!</h1>
             <h1>Olá, digite as suas informações.</h1>
           </div>
           <div className="inputs">
             <h1 className="cpftxt">CPF</h1>
-            <input type="text" placeholder="000.000.000-00"></input>
+            <input
+              type="text"
+              placeholder="000.000.000-00"
+              value={cpf}
+              maxLength={14}
+              onChange={(e) => setCpf(cpfMask(e.target.value))}
+            ></input>
             <h1 className="senhatxt">Senha</h1>
             <div id="password">
-              <input type="text" placeholder="Password"></input>
-              <button><Image src={Senha} /></button>
+              <input
+                type="password"
+                placeholder="Password"
+                value={senha}
+                onChange={(e) => setSenha(e.target.value)}
+              ></input>
             </div>
           </div>
-          <Link
+          <button
             id="botaolog"
-            href="/UsuarioHome"
-            locale="Cadastro"
             className="b1 bg-sky-600 text-white md:text-base text-sm py-4 px-5"
+            onClick={() => window.location.pathname = auth.entrarConta(cpf, senha)}
           >
             Entrar
-          </Link>
+          </button>
           <div id="loginlog">
             <h1>Não possui uma conta?</h1>
-            <Link
-              className="loginlink"
-              href="../Login/"
-            ><h1>Inscreva-se</h1></Link>
+            <Link className="loginlink" href="../Cadastro/">
+              <h1>Inscreva-se</h1>
+            </Link>
           </div>
         </div>
-      </main >
-    </div >
+      </main>
+    </div>
   );
 }

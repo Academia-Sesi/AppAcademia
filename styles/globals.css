@@ -289,3 +289,116 @@ a {
     padding-bottom: 11%;
   }
 }
+
+
+/* Gustavo - admin */
+
+.main {
+  background-color: #e0e0e0;
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+form {
+  width: 60%;
+  display: flex;
+}
+
+select {
+  width: 100%;
+  padding: 0.6em;
+  border-radius: 8px;
+}
+
+.exConta {
+  text-align: center;
+  margin-top: 10px;
+  color: #B50000;
+  cursor: pointer;
+}
+
+.esconder {
+  display: none;
+}
+
+.button-sair {
+  width: 60%;
+  background-color: #B50000;
+  color: white;
+  border-radius: 10px;
+  position: fixed;
+  display: flex;
+  bottom: 12vh;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: 400ms;
+}
+
+.button-sair:hover {
+  background-color: #860000;
+}
+
+.main a {
+  width: 60vw;
+  align-self: center;
+}
+
+/* Gustavo - Perfil */
+
+.user {
+  margin-top: 4em;
+  margin-bottom: 20em;
+  width: 60%;
+}
+
+.user-infos {
+  display: flex;
+  margin-top: 10px;
+}
+
+.user-infos input {
+  height: 32px;
+  width: 98%;
+  border-radius: 8px;
+  border-width: 0.1px;
+  padding-left: 10px;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+.user-infos input:focus {
+  outline: none;
+}
+
+.user-infos button {
+  border-radius: 8px;
+  width: 4em;
+  background-color: rgb(145, 219, 145);
+  cursor: pointer;
+  margin-top: 20px;
+  transition: 400ms ease;
+}
+
+.user-infos button:hover {
+  background-color: rgb(137, 182, 137);
+}
+
+.input-label {
+  width: 100%;
+}
+
+.main .head {
+  height: 10vh;
+  background-color: #35A4EE;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+}
