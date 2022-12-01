@@ -72,7 +72,7 @@ export default function Login() {
           </button>
           <div id="loginlog">
             <h1>Não possui uma conta?</h1>
-            <Link className="loginlink" href="../cadastro/">
+            <Link className="loginlink" href="../../cadastro">
               <h1>Inscreva-se</h1>
             </Link>
           </div>

@@ -86,7 +86,7 @@ export default function Cadastro() {
           </button>
           <div id="login">
             <h1>Já possui uma conta?</h1>
-            <Link className="loginlink" href="../login/">
+            <Link className="loginlink" href="../../login">
               <h1>Faça Login</h1>
             </Link>
           </div>
