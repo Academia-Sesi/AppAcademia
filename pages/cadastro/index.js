@@ -29,7 +29,7 @@ export default function Cadastro() {
       </Head>
 
       <main className="MainCadastro">
-        <Link href="/" locale="Cadastro">
+        <Link href="/" locale="cadastro">
           <Image
             width="112"
             height="35"
@@ -79,14 +79,14 @@ export default function Cadastro() {
               setNome("");
               setCpf("");
               setSenha("");
-              window.location.pathname = "/Login";
+              window.location.pathname = "/login";
             }}
           >
             Criar conta
           </button>
           <div id="login">
             <h1>Já possui uma conta?</h1>
-            <Link className="loginlink" href="../Login/">
+            <Link className="loginlink" href="../login/">
               <h1>Faça Login</h1>
             </Link>
           </div>

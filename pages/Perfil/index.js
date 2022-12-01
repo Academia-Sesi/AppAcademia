@@ -19,7 +19,7 @@ export default function Perfil() {
 
   useEffect(() => {
     const conta = auth.verificaLogou();
-    if (!conta) window.location.pathname = "/Login";
+    if (!conta) window.location.pathname = "/login";
     setConta(conta);
     setNome(conta.nome);
     setCpf(conta.cpf);
