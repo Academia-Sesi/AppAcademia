@@ -66,7 +66,7 @@ function entrarConta(cpf, senha) {
   let contaSerialized = JSON.stringify(conta);
   sessionStorage.setItem(`logou${conta.cpf}`, contaSerialized);
   sessionStorage.removeItem(conta.cpf);
-  return "/Perfil";
+  return "/perfil";
 }
 
 function excluirConta(key) {
