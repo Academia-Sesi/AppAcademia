@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import Sesi from "../../public/Sesi.png";
+import Sesi from "../../assets/Sesi.png";
 
 import { useState } from "react";
 import auth from "../../services/auth.js";
@@ -29,15 +29,11 @@ export default function Cadastro() {
       </Head>
 
       <main className="MainCadastro">
-        <Link href="/" locale="cadastro">
-          <Image
-            width="112"
-            height="35"
-            className=" mt-8 mb-5 ml-11"
-            src={Sesi}
-            alt="Logo do Senai"
-          />
-        </Link>
+        <div className="mt-5 mb-5 ml-11">
+            <Link href="/" locale="home">
+              <Image width="112" height="35" src={Sesi} alt="Logo do Senai" />
+            </Link>
+          </div>
         <div id="elementosesquerda">
           {" "}
           {/*div da esquerda, informações*/}
