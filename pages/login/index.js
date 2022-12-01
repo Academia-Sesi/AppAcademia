@@ -28,7 +28,7 @@ export default function Login() {
       </Head>
 
       <main className="MainCadastro">
-        <Link href="/" locale="Cadastro">
+        <Link href="/" locale="cadastro">
           <Image
             width="112"
             height="35"
@@ -72,7 +72,7 @@ export default function Login() {
           </button>
           <div id="loginlog">
             <h1>Não possui uma conta?</h1>
-            <Link className="loginlink" href="../Cadastro/">
+            <Link className="loginlink" href="../cadastro/">
               <h1>Inscreva-se</h1>
             </Link>
           </div>
