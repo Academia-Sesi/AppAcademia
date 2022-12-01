@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import Sesi from "../../public/Sesi.png";
+import Sesi from "../../assets/Sesi.png";
 
 import { useState } from "react";
 import auth from "../../services/auth.js";

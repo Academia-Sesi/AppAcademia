@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import Head from "next/head";
 import Image from "next/image";
-import Sesi from "../../public/Sesi.png";
+import Sesi from "../../assets/Sesi.png";
 import Link from "next/link";
-import construção from "../../public/usuarioHome.png";
+import construção from "../../assets/usuarioHome.png";
 
 // NICOLE ESTA FAZENDO ESSA PÁGINA
 
@@ -18,7 +18,7 @@ export default function UsuarioHome() {
 
       <main>
         <div className="inline-block mt-5 mb-5 ml-11">
-          <Link href="/" locale="usuarioHome">
+          <Link href="/" locale="homeusuario">
             <Image width="112" height="35" src={Sesi} alt="Logo do Senai" />
           </Link>
         </div>

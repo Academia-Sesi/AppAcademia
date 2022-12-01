@@ -1,21 +1,21 @@
 import { useState, useEffect } from "react";
 import Head from "next/head";
 import Image from "next/image";
-import Sesi from "../public/Sesi.png";
+import Sesi from "../assets/Sesi.png";
 import Link from "next/link";
-import Musculação from "../public/Musculação.png";
-import Funcional from "../public/Funcional.png";
-import HIT from "../public/Hiit.png";
-import Hidroginastica from "../public/Hidroginastica.png";
-import Pilates from "../public/Pilates.png";
-import RetanguloCom from "../public/retangulo.png";
-import RetanguloSem from "../public/WppSem.png";
-import Yoga from "../public/Yoga.png";
-import Facebook from "../public/Facebook.png";
-import Twitter from "../public/Twitter.png";
-import Instagram from "../public/Instagram.png";
-import Linkedin from "../public/Linkedin.png";
-import Youtube from "../public/Youtube.png";
+import Musculação from "../assets/Musculação.png";
+import Funcional from "../assets/Funcional.png";
+import HIT from "../assets/Hiit.png";
+import Hidroginastica from "../assets/Hidroginastica.png";
+import Pilates from "../assets/Pilates.png";
+import RetanguloCom from "../assets/retangulo.png";
+import RetanguloSem from "../assets/WppSem.png";
+import Yoga from "../assets/Yoga.png";
+import Facebook from "../assets/Facebook.png";
+import Twitter from "../assets/Twitter.png";
+import Instagram from "../assets/Instagram.png";
+import Linkedin from "../assets/Linkedin.png";
+import Youtube from "../assets/Youtube.png";
 
 // NICOLE ESTA FAZENDO ESSA PÁGINA
 
