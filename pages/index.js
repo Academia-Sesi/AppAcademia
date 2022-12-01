@@ -11,7 +11,7 @@ import Pilates from "../public/Pilates.png";
 import RetanguloCom from "../public/retangulo.png";
 import RetanguloSem from "../public/WppSem.png";
 import Yoga from "../public/Yoga.png";
-import Facebook from "../public/Dacebook.png";
+import Facebook from "../public/Facebook.png";
 import Twitter from "../public/Twitter.png";
 import Instagram from "../public/Instagram.png";
 import Linkedin from "../public/Linkedin.png";
