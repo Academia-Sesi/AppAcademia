@@ -35,7 +35,7 @@ export default function UsuarioHome() {
             <p>Página ainda em construção!</p>
             <div className="mt-6">
               <Link
-                href="/perfil"
+                href="/profile"
                 locale="usuarioHome"
                 className="b1 bg-sky-600 text-white md:text-base text-sm py-2 px-16 rounded-lg"
               >
