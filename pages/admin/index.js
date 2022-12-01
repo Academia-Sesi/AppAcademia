@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import auth from "../../services/auth.js";
+import Head from "next/head";
 
 export default function Admin() {
   const [contas, setContas] = useState([]);
