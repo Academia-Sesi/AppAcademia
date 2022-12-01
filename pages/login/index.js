@@ -27,7 +27,7 @@ export default function Login() {
         <link rel="icon" href="../sesiIcon.png" />
       </Head>
 
-      <main className="MainCadastro">
+      <main className="MainCadastro ">
         <div className="mt-5 mb-5 ml-11">
           <Link href="/" locale="home">
             <Image width="112" height="35" src={Sesi} alt="Logo do Senai" />

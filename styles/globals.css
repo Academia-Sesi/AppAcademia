@@ -83,7 +83,7 @@ a {
 .bodyequivalent {
   overflow: hidden;
   background-size: 94%;
-  background-image: url("../assets/Cadastro.png");
+  background-image: url("/assets/Cadastro.png");
   background-repeat: no-repeat;
   background-position: 100% 0;
   height: 100vh;
@@ -93,7 +93,7 @@ a {
 .bodyequivalentlog {
   overflow: hidden;
   background-size: 94%;
-  background-image: url("../assets/Cadastro.png");
+  background-image: url("/assets/Cadastro.png");
   background-repeat: no-repeat;
   background-position: 100% 0;
   height: 100vh;
