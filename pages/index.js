@@ -50,16 +50,12 @@ export default function Home() {
               : "acendeapaga w-full flex bg-transparent fixed"
           }
         >
-          <Link href="/" locale="home">
-            <Image
-              width="112"
-              height="35"
-              className=" mt-5 mb-5 ml-11"
-              src={Sesi}
-              alt="Logo do Senai"
-            />
-          </Link>
-          <lu className="list-none text-lg flex ml-28">
+          <div className="mt-5 mb-5 ml-11">
+            <Link href="/" locale="home">
+              <Image width="112" height="35" src={Sesi} alt="Logo do Senai" />
+            </Link>
+          </div>
+          <ul className="list-none text-lg flex ml-28">
             <li className="mt-6 ml-7 ">
               <Link href="/" locale="home">
                 INICIO
@@ -85,16 +81,18 @@ export default function Home() {
                 ENTRE EM CONTATO
               </Link>
             </li>
-          </lu>
+          </ul>
         </nav>
 
         <Image
           src={RetanguloCom}
+          alt="Imagem azul"
           className="wppCom absolute pointer-events-none ml-auto right-0"
         />
 
         <Image
           src={RetanguloSem}
+          alt="Imagem"
           className="wppSem absolute pointer-events-none ml-auto right-0"
         />
 
@@ -162,7 +160,7 @@ export default function Home() {
               <Image
                 className="rounded-t-3xl"
                 src={Pilates}
-                alt="Homem masculo aqui"
+                alt="Mulher fazendo pilates"
               />
               <h1 className="absolute  text-white font-normal">Pilates Solo</h1>
             </div>
@@ -179,7 +177,7 @@ export default function Home() {
               <Image
                 className="rounded-t-3xl"
                 src={Yoga}
-                alt="Homem masculo aqui"
+                alt="Pessoa fazendo yoga"
               />
               <h1 className="absolute text-white font-normal">Yoga</h1>
             </div>
@@ -195,7 +193,7 @@ export default function Home() {
               <Image
                 className="rounded-t-3xl"
                 src={Funcional}
-                alt="Homem masculo aqui"
+                alt="Pessoa fazendo funcional"
               />
               <h1 className="absolute text-white font-normal">
                 Treinamento funcional
@@ -240,13 +238,15 @@ export default function Home() {
         </div>
       </main>
 
-
-
       <footer className="py-10 justify-center items-center bg-[#006CB5] mt-auto">
         <div className="flex">
-          <Image src={Sesi} width="90" height="10" className="ml-8" />
+          <Image src={Sesi} width="90" height="10" className="ml-8" alt="logo senai" />
           <div className="flex px-auto items-center space-x-4 ml-auto mr-10">
-            <Link href="https://www.facebook.com/groups/285193339606782/" target="blank" locale="home">
+            <Link
+              href="https://www.facebook.com/groups/285193339606782/"
+              target="blank"
+              locale="home"
+            >
               <Image
                 width="40"
                 height="40"
@@ -256,7 +256,11 @@ export default function Home() {
               />
             </Link>
 
-            <Link href="https://twitter.com/SESIsc" target="blank" locale="home">
+            <Link
+              href="https://twitter.com/SESIsc"
+              target="blank"
+              locale="home"
+            >
               <Image
                 width="40"
                 height="40"
@@ -266,7 +270,11 @@ export default function Home() {
               />
             </Link>
 
-            <Link href="https://www.instagram.com/sesi.sc/" target="blank" locale="home">
+            <Link
+              href="https://www.instagram.com/sesi.sc/"
+              target="blank"
+              locale="home"
+            >
               <Image
                 width="40"
                 height="40"
@@ -276,7 +284,11 @@ export default function Home() {
               />
             </Link>
 
-            <Link href="https://www.linkedin.com/company/sesisc/" target="blank" locale="home">
+            <Link
+              href="https://www.linkedin.com/company/sesisc/"
+              target="blank"
+              locale="home"
+            >
               <Image
                 width="40"
                 height="40"
@@ -286,7 +298,11 @@ export default function Home() {
               />
             </Link>
 
-            <Link href="https://www.youtube.com/@sesi" target="blank" locale="home">
+            <Link
+              href="https://www.youtube.com/@sesi"
+              target="blank"
+              locale="home"
+            >
               <Image
                 width="40"
                 height="40"
