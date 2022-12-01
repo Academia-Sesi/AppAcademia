@@ -45,6 +45,7 @@ export default function Perfil() {
           <div class="input-label">
             <p>CPF</p>
             <input
+              id="cpf-input"
               type="text"
               value={cpf}
               maxLength={14}
@@ -63,15 +64,20 @@ export default function Perfil() {
             ></input>
           </div>
         </div>
+        <div className="buttons-aligner">
+          <button
+            className="button-salvar"
+            onClick={() => auth.editarConta(nome, senha)}
+          >
+            Salvar alterações
+          </button>
+          <Link href="../">
+          <button class="button-sair-conta" onClick={() => auth.removeLogou()}>
+            Sair
+          </button>
+        </Link>
       </div>
-      <Link href="../">
-        <button class="button-sair" onClick={() => auth.removeLogou()}>
-          Sair
-        </button>
-      </Link>
-      <button className="p-3 bg-green-500 text-white rounded-2xl mb-6" onClick={() => auth.editarConta(nome, senha)}>
-        Salvar
-      </button>
+      </div>
     </div>
   );
 }

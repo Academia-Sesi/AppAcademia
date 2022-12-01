@@ -86,6 +86,8 @@ a {
   background-image: url("../public/Cadastro.png");
   background-repeat: no-repeat;
   background-position: 100% 0;
+  height: 100vh;
+  width: 100vw;
 }
 
 .bodyequivalentlog {
@@ -94,6 +96,8 @@ a {
   background-image: url("../public/Cadastro.png");
   background-repeat: no-repeat;
   background-position: 100% 0;
+  height: 100vh;
+  width: 100vw;
 }
 
 .bodyequivalentlog div {
@@ -150,16 +154,22 @@ a {
   padding: 0.8%;
   font-size: 95%;
   margin-bottom: 0.5%;
+  transition: 400ms ease; 
+}
+
+.inputs input:hover {
+  border-color: #73C0EC
+}
+
+.inputs input:focus {
+  border-color: #73C0EC;
+  outline: transparent;
 }
 
 #password {
   margin-bottom: 6%;
   display: flex;
   flex-direction: row;
-}
-
-#password button {
-  padding-left: 8.5%;
 }
 
 #login {
@@ -189,6 +199,11 @@ a {
   margin-left: 13%;
 }
 
+#botao:hover {
+  background-color: #006CB5;
+  transition: 400ms ease;
+}
+
 #botaolog {
   font-size: 120%;
   padding: 0.5%;
@@ -196,6 +211,11 @@ a {
   padding-left: 5%;
   padding-right: 5%;
   margin-left: 14.5%;
+}
+
+#botaolog:hover {
+  background-color: #006CB5;
+  transition: 400ms ease;
 }
 
 #botao h1 {
@@ -294,12 +314,11 @@ a {
 /* Gustavo - admin */
 
 .main {
-  background-color: #e0e0e0;
-  min-height: 100vh;
+  background-color: #ffffff;
+  height: 100vh;
   width: 100vw;
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
 }
 
@@ -310,8 +329,20 @@ form {
 
 select {
   width: 100%;
+  background-color: #ffffff;
+  border: 1px solid #000000;
   padding: 0.6em;
   border-radius: 8px;
+  cursor: pointer;
+  transition: 400ms ease;
+}
+
+select:hover {
+  border-color: #006CB5;
+}
+
+select:focus {
+  border-color: #006CB5;
 }
 
 .exConta {
@@ -321,36 +352,35 @@ select {
   cursor: pointer;
 }
 
-.esconder {
-  display: none;
+.button-sair-aligner {
+  width: 60vw;
 }
 
 .button-sair {
   width: 60%;
-  background-color: #B50000;
+  background-color: #cc1515;
   color: white;
-  border-radius: 10px;
-  position: fixed;
-  display: flex;
-  bottom: 12vh;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  cursor: pointer;
-  transition: 400ms;
+  padding: 0.4em;
+  border-radius: 0.6em;
+  position: absolute;
+  bottom: 3em;
+  transition: 400ms ease;
 }
 
 .button-sair:hover {
-  background-color: #860000;
-}
-
-.main a {
-  width: 60vw;
-  align-self: center;
+  background-color: #690a0a;
+  transition: 400ms ease;
 }
 
 /* Gustavo - Perfil */
+
+
+.main .head {
+  height: 10vh;
+  background-color: #35A4EE;
+  position: relative;
+  width: 100vw;
+}
 
 .user {
   margin-top: 4em;
@@ -363,42 +393,68 @@ select {
   margin-top: 10px;
 }
 
+.user-infos p {
+  font-weight: 500;
+}
+
 .user-infos input {
-  height: 32px;
-  width: 98%;
+  padding: 0.5em;
+  width: 100%;
   border-radius: 8px;
   border-width: 0.1px;
   padding-left: 10px;
-  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
-  box-sizing: border-box;         /* Opera/IE 8+ */
+  transition: 400ms ease;
+}
+
+.user-infos input:hover {
+  border-color: #006CB5;
 }
 
 .user-infos input:focus {
   outline: none;
+  border-color: #006CB5;
 }
 
-.user-infos button {
-  border-radius: 8px;
-  width: 4em;
-  background-color: rgb(145, 219, 145);
-  cursor: pointer;
-  margin-top: 20px;
-  transition: 400ms ease;
-}
-
-.user-infos button:hover {
-  background-color: rgb(137, 182, 137);
+#cpf-input:hover {
+  border-color: #e5e7eb;
+  cursor: not-allowed;
 }
 
 .input-label {
   width: 100%;
 }
 
-.main .head {
-  height: 10vh;
-  background-color: #35A4EE;
-  position: absolute;
-  top: 0;
-  width: 100vw;
+.button-salvar {
+  width: fit-content;
+  background-color: #006CB5;
+  color: white;
+  padding: 0.5em;
+  border-radius: 0.6em;
+  transition: 400ms ease;
+}
+
+.button-salvar:hover {
+  background-color: #03578f;
+}
+
+.button-sair-conta {
+  background-color: #cc1515;
+  width: 5em;
+  padding: 0.5em;
+  transition: 400ms ease;
+  border-radius: 0.6em;
+  color: white;
+}
+
+
+.button-sair-conta:hover {
+  background-color: #690a0a;
+}
+
+.buttons-aligner {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }

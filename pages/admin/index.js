@@ -15,12 +15,14 @@ export default function Admin() {
 
   return (
     <div className="main">
+      <br></br>
+      <br></br>
       <form>
         <select onChange={(e) => setConta(e.target.value)}>
           <option value={""}>Selecionar aluno</option>
           {contas.map((conta) => (
             <option key={conta.cpf} value={conta.cpf}>
-              {conta.nome}
+              {`${conta.nome}, CPF: ${conta.cpf}`}
             </option>
           ))}
         </select>
@@ -38,7 +40,7 @@ export default function Admin() {
       ) : (
         ""
       )}
-      <Link href="../">
+      <Link className="button-sair-aligner" href="../">
         <button className="button-sair">Sair</button>
       </Link>
     </div>
