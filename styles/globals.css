@@ -1,12 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 /* Predefinido do NEXT.js */
 
 html,
 body {
+  height: 100vh;
   padding: 0;
   margin: 0;
   font-family: "Poppins", cursive;
+  background-color: white;
 }
 
 a {
@@ -21,90 +27,378 @@ a {
 
 /* Nosso CSS */
 
-body {
-  background-color: white;
-}
-
-.logo {
-  margin: 35px 0px 0px 45px;
-}
-
-li {
-  list-style-type: none;
-  margin-top: 40px;
-  margin-left: 28px;
-  font-size: 18px;
-}
-
-lu {
-  display: flex;
-  margin-left: 117px;
-}
-
-nav {
-  display: flex;
-  background-color: transparent;
-  position: fixed;
-}
-
-img.retangulo {
-  float: right;
-}
-
-img.masculo {
-  position: absolute;
-  left:50%;
-  margin-top: 130px;
-}
-
-span.construa{
-  font-size: 65px;
-  font-weight: 400;
-}
-
-span.perfeita {
-  font-size: 65px;
-  margin: 0px;
-  font-weight: 700;
-  font-style: italic;
-  background: linear-gradient(to top right, #FFFFFF 0%, #0670B7 51%);
+.colorfullWord {
+  background: linear-gradient(to top right, #ffffff 0%, #0670b7 51%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  padding-left: 2%;
 }
 
-div.frase {
+
+.acendeapaga {
+  transition: 0.2s;
+}
+
+@media screen and (max-width: 1300px) {
+  .venha {
+    margin-right: 0px !important;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .conheca {
+    padding-top: 460px;
+  }
+}
+
+.wppSem {
+  display: none;
+}
+
+@media screen and (max-width: 1500px) {
+  .wppCom {
+    display: none;
+  }
+
+  .wppSem {
+    display: block;
+    height: 100vh;
+    width: 50%;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .wppCom {
+    display: none;
+  }
+
+  .wppSem {
+    display: none;
+  }
+}
+
+/*=======Cadastro e Login=======*/
+/*DISCLAIMER: as classes e IDs com log no final se referem ao Login*/
+
+.bodyequivalent {
+  overflow: hidden;
+  background-size: 94%;
+  background-image: url("../public/Cadastro.png");
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+}
+
+.bodyequivalentlog {
+  overflow: hidden;
+  background-size: 94%;
+  background-image: url("../public/Cadastro.png");
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+}
+
+.bodyequivalentlog div {
+  display: inline-block;
+}
+
+.bodyequivalent div {
+  display: inline-block;
+}
+
+#elementosesquerda {
+  position: relative;
+  padding-top: 4.5%;
+  width: 100%;
+  padding-left: 3%;
+}
+#elementosesquerdalog {
+  position: relative;
+  padding-top: 4.5%;
+  width: 100%;
+  padding-left: 3%;
+}
+#bemvindo {
+  margin-top: 4%;
+  margin-left: 10%;
+}
+
+.bemvindo {
+  font-weight: bold;
+  font-size: 200%;
+}
+
+.inputs {
   display: flex;
-  padding-top: 260px;
-  margin-right: 700px;
-  text-align: start;
+  flex-direction: column;
+  width: 80%;
+  padding-top: 2%;
+  padding-left: 4%;
 }
 
-.pl{
-  padding-left: 69px;
+.inputs h1 {
+  margin-top: 1%;
+  padding-left: 8%;
 }
 
-p.venha {
-  font-weight: 400;
-  color: #9A9A9A;
-  font-size: 20px;
+.inputs input {
+  margin-top: 0.1%;
+  width: 30%;
+  height: 10%;
+  left: 8%;
+  border: 2px solid #dbdfe4;
+  border-radius: 2%;
+  position: relative;
+  padding: 0.8%;
+  font-size: 95%;
+  margin-bottom: 0.5%;
+}
+
+#password {
+  margin-bottom: 6%;
   display: flex;
-  margin-right: 900px;
+  flex-direction: row;
 }
 
-.botoes {
-  border-radius: 90px;
-  padding: 10px 20px 10px 20px;
+#password button {
+  padding-left: 8.5%;
 }
 
-.b1 {
- background-color: #3088C3;
- color: #FFFFFF;
+#login {
+  margin-top: 1.5%;
+  padding-left: 14%;
+  display: flex;
 }
 
-.b2 {
-  border: solid;
-  border-width: 2px;
-  border-color: #094B79;
-  color: #094B79;
+#loginlog {
+  margin-top: 1.5%;
+  padding-left: 13%;
+  display: flex;
+}
+
+.loginlink {
+  padding-left: 0.5%;
+  font-weight: bold;
+  color: #006CB5;
+}
+
+#botao {
+  font-size: 120%;
+  padding: 0.5%;
+  border-radius: 6%;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-left: 13%;
+}
+
+#botaolog {
+  font-size: 120%;
+  padding: 0.5%;
+  border-radius: 6%;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-left: 14.5%;
+}
+
+#botao h1 {
+  margin-left: 20%;
+}
+
+#botaolog h1 {
+  margin-left: 20%;
+}
+
+@media screen and (max-width: 1400px) {
+  #elementosesquerda {
+    padding-left: 1%;
+    padding-top: 0;
+    padding-bottom: 3%;
+  }
+  #elementosesquerdalog {
+    position: relative;
+    padding-top: 4.5%;
+    width: 100%;
+    padding-left: 3%;
+  }
+
+  #botao {
+    margin-left: 13.5%;
+  }
+  #botaolog {
+    margin-left: 16%;
+  }
+  #login {
+    padding-left: 12%;
+  }
+
+  .inputs input {
+    width: 35%;
+  }
+}
+
+@media screen and (max-width: 1600px) and (min-width: 1000px) {
+  #login {
+    padding-left: 12%;
+  }
+
+  #loginlog {
+    margin-top: 1.5%;
+    padding-left: 11%;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 2000px) and (min-width: 1600px) {
+  .bodyequivalent {
+    padding-bottom: 3%;
+    background-position: 100% -20%;
+  }
+  .bodyequivalentlog {
+    padding-bottom: 3%;
+    background-position: 100% -20%;
+  }
+
+  #login {
+    padding-left: 13.5%;
+  }
+
+  #loginlog {
+    margin-top: 1.5%;
+    padding-left: 13%;
+    display: flex;
+  }
+}
+
+@media screen and (max-height: 1000px) and (max-width: 1600px) {
+  .bodyequivalent {
+    background-position: 30% 40%;
+    background-size: 120%;
+    padding-bottom: 18%;
+  }
+
+  .bodyequivalentlog {
+    background-position: 30% 50%;
+    background-size: 120%;
+    padding-bottom: 25%;
+  }
+}
+
+@media screen and (max-height: 1100px) and (max-width: 2000px) {
+  #elementosesquerda {
+    padding-bottom: 6%;
+  }
+  #elementosesquerdalog {
+    padding-bottom: 11%;
+  }
+}
+
+
+/* Gustavo - admin */
+
+.main {
+  background-color: #e0e0e0;
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+form {
+  width: 60%;
+  display: flex;
+}
+
+select {
+  width: 100%;
+  padding: 0.6em;
+  border-radius: 8px;
+}
+
+.exConta {
+  text-align: center;
+  margin-top: 10px;
+  color: #B50000;
+  cursor: pointer;
+}
+
+.esconder {
+  display: none;
+}
+
+.button-sair {
+  width: 60%;
+  background-color: #B50000;
+  color: white;
+  border-radius: 10px;
+  position: fixed;
+  display: flex;
+  bottom: 12vh;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: 400ms;
+}
+
+.button-sair:hover {
+  background-color: #860000;
+}
+
+.main a {
+  width: 60vw;
+  align-self: center;
+}
+
+/* Gustavo - Perfil */
+
+.user {
+  margin-top: 4em;
+  margin-bottom: 20em;
+  width: 60%;
+}
+
+.user-infos {
+  display: flex;
+  margin-top: 10px;
+}
+
+.user-infos input {
+  height: 32px;
+  width: 98%;
+  border-radius: 8px;
+  border-width: 0.1px;
+  padding-left: 10px;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+.user-infos input:focus {
+  outline: none;
+}
+
+.user-infos button {
+  border-radius: 8px;
+  width: 4em;
+  background-color: rgb(145, 219, 145);
+  cursor: pointer;
+  margin-top: 20px;
+  transition: 400ms ease;
+}
+
+.user-infos button:hover {
+  background-color: rgb(137, 182, 137);
+}
+
+.input-label {
+  width: 100%;
+}
+
+.main .head {
+  height: 10vh;
+  background-color: #35A4EE;
+  position: absolute;
+  top: 0;
+  width: 100vw;
 }
