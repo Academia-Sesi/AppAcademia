@@ -53,7 +53,7 @@ rodrigo_marcondes@estudante.sesisenai.org.br<br>
 - Botão “Conheça mais”: Este botão leva para um site informativo sobre o SESI.<br>
 - Botão “Entre em contato”: Ele te leva para um site para entrar em contato com o SESI.<br>
 - Botão “Crie uma conta”: Ele leva para uma tela de cadastro onde terá alguns campos de texto onde o usuário poderá colocar suas informações como: Nome, CPF e senha.<br>
-- Botão “Faça Login”: Esse botão faz quase a mesma coisa, porém ao invés de levar a uma tela para cadastrar, ele te leva a uma tela que tem um botão de entrar onde terá compos que tem que ser preenchidos por nome, cpf e senha de uma aluno ou adm cadastrado, além de acessar um perfil.<br>
+- Botão “Faça Login”: Esse botão faz quase a mesma coisa, porém ao invés de levar a uma tela para cadastrar, ele te leva a uma tela que tem um botão de entrar onde terá compos que tem que ser preenchidos como cpf e senha de uma conta criada ou administrativa.<br>
 - Botão Facebook: localizado no final da página inicial leva a pagina do SESI/SENAI no Facebook.<br>
 - Botão Twitter: localizado no final da página inicial leva a pagina do SESI/SC no Twitter.<br>
 - Botão Instagram: localizado no final da página inicial leva a pagina do SESI/SC no Instagram.<br>
@@ -78,10 +78,13 @@ rodrigo_marcondes@estudante.sesisenai.org.br<br>
 
 > Página de perfil
 
-- aaaa.<br>
-- aaaa.<br>
+- Campo de texto nome: Localizado na seção de "Informações do aluno" este campo da a opção ao usuário de alterar seu nome.<br>
+- Campo de texto CPF: Localizado na seção de "Informações do aluno" este campo serve para que o aluno possa somente ver seu CPF, pois este campo permanece desabilitado a edição.<br>
+- Campo de texto senha: Localizado na seção de "Informações do aluno" este campo da a opção ao usuário de alterar sua senha.<br>
+- Botão salvar: Localizado na seção de "Informações do aluno" este botão possibilita salvar as alterações feitas anteriormente nos campos de texto.
+- Botão sair: Localizado na seção de "Informações do aluno" este botão ao ser pressionado faz com que o usuário volte a tela inicial do nosso site
 
 > Página do admin
 
-- aaaa.<br>
-- aaaa.<br>
+- Selecionar aluno: Localizado no topo da página o botão de "Selecionar aluno" ao ser pressionado mostrará a lista de pessoas cadastradas no sistema. Caso o admin selecione um usuário uma opção "Excluir aluno" aparecerá, dando assim a possibilidade ao adminstrador de remover a conta do usuário do sistema.<br>
+- Sair: Localizada no final da página o botão "Sair" ao ser apertado faz com que o usuário volte a tela inicial do nosso site.<br>
