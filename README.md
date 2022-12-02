@@ -1,34 +1,34 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Academia Sesi
 
-## Getting Started
+![preview](./.github/preview.png)
 
-First, run the development server:
+> Site Academia Sesi (Home page)
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+Projeto construído para a SA (situação de aprendizagem) do 2° do ensino médio.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+[🔗 Clique aqui para acessar o site](https://app-academia.vercel.app/)
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## 🛠️ Tecnologias 
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+- HTML
+- CSS
+- JavaScript
+- Nextjs
+- Git e Github
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## 👥 Alunos
 
-## Learn More
+- Nicole Licyane
+- Gustavo Braga
+- Pedro Dias
+- Pedro Henrique
+- Rodrigo Xavier
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## ✉️ Contato
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+nicole_lv_silva@estudante.sesisenai.org.br
+gustavo_s_braga@estudante.sesisenai.org.br
+pedro_sartorio@estudante.sesisenai.org.br
+pedro_hc_nunes@estudante.sesisenai.org.br
+rodrigo_marcondes@estudante.sesisenai.org.br
