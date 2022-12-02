@@ -1,34 +1,90 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Academia Sesi
 
-## Getting Started
+![preview](./.github/preview.png)
 
-First, run the development server:
+> Site Academia Sesi (Home page)
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+Projeto construído para a SA (situação de aprendizagem) do 2° do ensino médio.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+[🔗 Clique aqui para acessar o site](https://app-academia.vercel.app/)
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## 🛠️ Tecnologias 
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+- HTML
+- CSS
+- JavaScript
+- Nextjs
+- Git e Github
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## 👥 Alunos
 
-## Learn More
+- Nicole Licyane
+- Gustavo Braga
+- Pedro Dias
+- Pedro Henrique
+- Rodrigo Xavier
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## ✉️ Contato
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+nicole_lv_silva@estudante.sesisenai.org.br<br>
+gustavo_s_braga@estudante.sesisenai.org.br<br>
+pedro_sartorio@estudante.sesisenai.org.br<br>
+pedro_hc_nunes@estudante.sesisenai.org.br<br>
+rodrigo_marcondes@estudante.sesisenai.org.br<br>
+<br>
+<br>
+------------------------------//------------------------------
+<br>
+<br>
 
-## Deploy on Vercel
+## ⚠️ Requisitos Não Funcionais
+- Site feito com javascript, html e css;<br>
+- Framework: Next.js;<br>
+- Armazenamento em session storage;<br>
+- 50% responsivo;<br>
+- Sistema CRUD (Create, Read, Update, Delete).<br>
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## ✅ Requisitos Funcionais
+> Home Page
+
+- Botão “Início”: Quando pressionado estando no topo da página nada acontece, porém se ele é pressionado enquanto se está mais abaixo na página, ele volta ao topo.<br>
+- Botão “Conheça mais”: Este botão leva para um site informativo sobre o SESI.<br>
+- Botão “Entre em contato”: Ele te leva para um site para entrar em contato com o SESI.<br>
+- Botão “Crie uma conta”: Ele leva para uma tela de cadastro onde terá alguns campos de texto onde o usuário poderá colocar suas informações como: Nome, CPF e senha.<br>
+- Botão “Faça Login”: Esse botão faz quase a mesma coisa, porém ao invés de levar a uma tela para cadastrar, ele te leva a uma tela que tem um botão de entrar onde terá compos que tem que ser preenchidos como cpf e senha de uma conta criada ou administrativa.<br>
+- Botão Facebook: localizado no final da página inicial leva a pagina do SESI/SENAI no Facebook.<br>
+- Botão Twitter: localizado no final da página inicial leva a pagina do SESI/SC no Twitter.<br>
+- Botão Instagram: localizado no final da página inicial leva a pagina do SESI/SC no Instagram.<br>
+- Botão Linkedin: localizado no final da página inicial leva a pagina do SESI/SC no Linkedin.<br>
+- Botão YouTube: localizado no final da página inicial leva ao canal do SESI no YouTube.<br>
+
+
+> Página de Cadastro
+
+- aaaa.<br>
+- aaaa.<br>
+
+> Página de Login
+
+- aaaa.<br>
+- aaaa.<br>
+
+> Página home do usuário
+
+- aaaa.<br>
+- aaaa.<br>
+
+> Página de perfil
+
+- Campo de texto nome: Localizado na seção de "Informações do aluno" este campo da a opção ao usuário de alterar seu nome.<br>
+- Campo de texto CPF: Localizado na seção de "Informações do aluno" este campo serve para que o aluno possa somente ver seu CPF, pois este campo permanece desabilitado a edição.<br>
+- Campo de texto senha: Localizado na seção de "Informações do aluno" este campo da a opção ao usuário de alterar sua senha.<br>
+- Botão salvar: Localizado na seção de "Informações do aluno" este botão possibilita salvar as alterações feitas anteriormente nos campos de texto.
+- Botão sair: Localizado na seção de "Informações do aluno" este botão ao ser pressionado faz com que o usuário volte a tela inicial do nosso site
+
+> Página do admin
+
+- Selecionar aluno: Localizado no topo da página o botão de "Selecionar aluno" ao ser pressionado mostrará a lista de pessoas cadastradas no sistema. Caso o admin selecione um usuário uma opção "Excluir aluno" aparecerá, dando assim a possibilidade ao adminstrador de remover a conta do usuário do sistema.<br>
+- Sair: Localizada no final da página o botão "Sair" ao ser apertado faz com que o usuário volte a tela inicial do nosso site.<br>
