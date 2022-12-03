@@ -49,6 +49,7 @@ rodrigo_marcondes@estudante.sesisenai.org.br<br>
 ## ✅ Requisitos Funcionais
 > Home Page
 
+- Imagem botão "Sesi": Quando clicado, retorna para o ínicio da página.<br>
 - Botão “Início”: Quando pressionado estando no topo da página nada acontece, porém se ele é pressionado enquanto se está mais abaixo na página, ele volta ao topo.<br>
 - Botão “Conheça mais”: Este botão leva para um site informativo sobre o SESI.<br>
 - Botão “Entre em contato”: Ele te leva para um site para entrar em contato com o SESI.<br>
@@ -63,18 +64,25 @@ rodrigo_marcondes@estudante.sesisenai.org.br<br>
 
 > Página de Cadastro
 
-- aaaa.<br>
-- aaaa.<br>
+- Imagem botão "Sesi": Quando clicado, retorna para a home page.<br>
+- Campo de texto nome: Onde o usuário coloca seu nome para realizar o cadastro.<br>
+- Campo de texto CPF: Onde o usuário coloca seu CPF para realizar o cadastro.<br>
+- Campo de texto senha: Onde o usuário escolhe uma senha para realizar o cadastro.<br>
+- Botão "Criar conta": Este botão possibilita criar uma conta para o usuário com as informações inseridas.
+- Botão "Faça login": Este botão possibilita ao usuário (que já temm uma conta cadastrada), ir para a tela de login de forma mais rápida.
 
 > Página de Login
 
-- aaaa.<br>
-- aaaa.<br>
+- Imagem botão "Sesi": Quando clicado, retorna para a home page.<br>
+- Campo de texto CPF: Onde o usuário coloca seu CPF para poder realizar o login.<br>
+- Campo de texto senha: Onde o usuário coloca sua senha para poder realizar o login.<br>
+- Botão "Entrar": Este botão possibilita que o usuário enter na conta já criada.
+- Botão "Inscreva-se": Este botão possibilita ao usuário (que ainda não tem conta cadastrada), ir para a tela de cadastro de forma mais rápida.
 
 > Página home do usuário
 
-- aaaa.<br>
-- aaaa.<br>
+- Imagem botão "Sesi": Quando clicado, retorna para a home page.<br>
+- Botão "Acessar perfil": Ao clicar nesse botão, o usuário irá para a página de perfil, onde escontrará todas as informações que ele ofereceu no cadatro..<br>
 
 > Página de perfil
 
