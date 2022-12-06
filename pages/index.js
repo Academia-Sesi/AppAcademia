@@ -8,7 +8,7 @@ import Funcional from "../assets/Funcional.png";
 import HIT from "../assets/Hiit.png";
 import Hidroginastica from "../assets/Hidroginastica.png";
 import Pilates from "../assets/Pilates.png";
-import RetanguloCom from "../assets/WppSem.png";
+import RetanguloCom from "../assets/WppCom.png";
 import RetanguloSem from "../assets/WppSem.png";
 import Yoga from "../assets/Yoga.png";
 import Facebook from "../assets/Facebook.png";
