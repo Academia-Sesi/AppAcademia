@@ -1,6 +1,6 @@
 # Academia Sesi
 
-![image](https://user-images.githubusercontent.com/80594088/205329800-9d4aa319-a549-40a4-a47f-cbb9ae180568.png)
+![preview](./.github/preview.png)
 
 > Site Academia Sesi (Home page)
 
